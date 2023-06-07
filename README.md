@@ -1,5 +1,5 @@
-# SAC-687 serverless API
-The SAC-687 project, created with [`aws-serverless-java-container`](https://github.com/awslabs/aws-serverless-java-container).
+# SAC-685 serverless API
+The SAC-685 project, created with [`aws-serverless-java-container`](https://github.com/awslabs/aws-serverless-java-container).
 
 The starter project defines a simple `/ping` resource that can accept `GET` requests with its tests.
 
@@ -13,10 +13,10 @@ The project folder also includes a `template.yml` file. You can use this [SAM](h
 ## Building the project
 You can use the SAM CLI to quickly build the project
 ```bash
-$ mvn archetype:generate -DartifactId=SAC-687 -DarchetypeGroupId=com.amazonaws.serverless.archetypes -DarchetypeArtifactId=aws-serverless-jersey-archetype -DarchetypeVersion=1.9.1 -DgroupId=com.sacral.SacralTesting -Dversion=1.0-SNAPSHOT -Dinteractive=false
-$ cd SAC-687
+$ mvn archetype:generate -DartifactId=SAC-685 -DarchetypeGroupId=com.amazonaws.serverless.archetypes -DarchetypeArtifactId=aws-serverless-jersey-archetype -DarchetypeVersion=1.9.1 -DgroupId=com.sacral.SacralTesting -Dversion=1.0-SNAPSHOT -Dinteractive=false
+$ cd SAC-685
 $ sam build
-Building resource 'Sac687Function'
+Building resource 'Sac685Function'
 Running JavaGradleWorkflow:GradleBuild
 Running JavaGradleWorkflow:CopyArtifacts
 
@@ -67,7 +67,7 @@ Once the deployment is completed, the SAM CLI will print out the stack's outputs
 -------------------------------------------------------------------------------------------------------------
 OutputKey-Description                        OutputValue
 -------------------------------------------------------------------------------------------------------------
-Sac687Api - URL for application            https://xxxxxxxxxx.execute-api.us-west-2.amazonaws.com/Prod/pets
+Sac685Api - URL for application            https://xxxxxxxxxx.execute-api.us-west-2.amazonaws.com/Prod/pets
 -------------------------------------------------------------------------------------------------------------
 ```
 
