@@ -1,12 +1,12 @@
 AWSTemplateFormatVersion: '2010-09-09'
 Transform: AWS::Serverless-2016-10-31
-Description: AWS Serverless Spring Boot 2 API - com.sacral.SacralTesting::STPN-28
+Description: AWS Serverless Spring Boot 2 API - com.sacral.SacralTesting::SAC-687
 Globals:
   Api:
     EndpointConfiguration: REGIONAL
 
 Resources:
-  Stpn28Function:
+  Sac687Function:
     Type: AWS::Serverless::Function
     Properties:
       Handler: com.sacral.SacralTesting.StreamLambdaHandler::handleRequest
@@ -23,8 +23,8 @@ Resources:
             Method: any
 
 Outputs:
-  Stpn28Api:
+  Sac687Api:
     Description: URL for application
     Value: !Sub 'https://${ServerlessRestApi}.execute-api.${AWS::Region}.amazonaws.com/Prod/ping'
     Export:
-      Name: Stpn28Api
+      Name: Sac687Api
